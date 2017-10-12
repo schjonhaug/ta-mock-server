@@ -17,8 +17,8 @@
         "left": 20,
         "top": 20,
         "src": {
-          "2x": "https://github.com/schjonhaug/ta-mock-server/blob/master/public/launcher%402x.png",
-          "3x": "https://github.com/schjonhaug/ta-mock-server/blob/master/public/launcher%403x.png"
+          "2x": "https://raw.githubusercontent.com/schjonhaug/ta-mock-server/master/public/launcher%402x.png",
+          "3x": "https://raw.githubusercontent.com/schjonhaug/ta-mock-server/master/public/launcher%403x.png"
         }
       },
       "capture": {
