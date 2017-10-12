@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0, maximum-scale=2.0, user-scalable=yes" />
+    <script type="text/javascript">
+        
+
+        function yesButtonPressed() {
+
+            window.webkit.messageHandlers.observe.postMessage("participationApproved");
+
+        }
+
+        function noButtonPressed() {
+
+            window.webkit.messageHandlers.observe.postMessage("participationDeclined");
+
+        }
+
+        function finishButtonPressed() {
+
+            window.webkit.messageHandlers.observe.postMessage("participationFinished");
+
+        }
+
+        function setStatus(text) {
+            document.getElementById("status").textContent = text;
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <h1>Webview</h1>
+    <span id="status">Status</span>
+
+    <h1>Trigger</h1>
+    <h2><a href="#" onclick="yesButtonPressed(); return false;">Ja</a></h2>
+    <h2><a href="#" onclick="noButtonPressed(); return false;">Nei</a></h2>
+
+    <h1>Done</h1>
+    <h2><a href="#" onclick="finishButtonPressed(); return false;">Ferdig</a></h2>
+
+</body>
+</html>
