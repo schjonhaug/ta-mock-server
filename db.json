@@ -17,12 +17,12 @@
         "left": 20,
         "top": 20,
         "src": {
-          "2x": "https://raw.githubusercontent.com/schjonhaug/ta-mock-server/master/public/launcher%402x.png",
-          "3x": "https://raw.githubusercontent.com/schjonhaug/ta-mock-server/master/public/launcher%403x.png"
+          "2x": "https://pacific-oasis-54671.herokuapp.com/public/launcher%402x.png",
+          "3x": "https://pacific-oasis-54671.herokuapp.com/public/launcher%403x.png"
         }
       },
       "capture": {
-        "url": "https://raw.githubusercontent.com/schjonhaug/ta-mock-server/master/public/index.html"
+        "url": "https://pacific-oasis-54671.herokuapp.com"
       }
     },
     "texts": {
