@@ -22,7 +22,7 @@
         }
       },
       "capture": {
-        "url": "https://my-json-server.typicode.com/schjonhaug/ta-mock-server/db"
+        "url": "https://raw.githubusercontent.com/schjonhaug/ta-mock-server/master/public/index.html"
       }
     },
     "texts": {
