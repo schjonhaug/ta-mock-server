@@ -6,27 +6,31 @@
     <script type="text/javascript">
         
 
-        function yesButtonPressed() {
+        function onConsentAccept() {
 
-            window.webkit.messageHandlers.observe.postMessage("participationApproved");
-
-        }
-
-        function noButtonPressed() {
-
-            window.webkit.messageHandlers.observe.postMessage("participationDeclined");
+            window.webkit.messageHandlers.observe.postMessage("onConsentAccept");
 
         }
 
-        function finishButtonPressed() {
+        function onConsentDecline() {
 
-            window.webkit.messageHandlers.observe.postMessage("participationFinished");
+            window.webkit.messageHandlers.observe.postMessage("onConsentDecline");
 
         }
 
-        function setStatus(text) {
-            document.getElementById("status").textContent = text;
+        function onCaptureFinish() {
 
+            window.webkit.messageHandlers.observe.postMessage("onCaptureFinish");
+
+        }
+
+        function onCaptureOpen() {
+            document.getElementById("status").textContent = "Opened";
+        }
+
+
+        function onCaptureClose() {
+            document.getElementById("status").textContent = "Closed";
         }
 
     </script>
@@ -36,12 +40,12 @@
     <h1>Webview</h1>
     <span id="status">Status</span>
 
-    <h1>Trigger</h1>
-    <h2><a href="#" onclick="yesButtonPressed(); return false;">Approve</a></h2>
-    <h2><a href="#" onclick="noButtonPressed(); return false;">Decline</a></h2>
+    <h1>Consent</h1>
+    <h2><a href="#" onclick="onConsentAccept(); return false;">Accept</a></h2>
+    <h2><a href="#" onclick="onConsentDecline(); return false;">Decline</a></h2>
 
-    <h1>Done</h1>
-    <h2><a href="#" onclick="finishButtonPressed(); return false;">Finish</a></h2>
+    <h1>Capture</h1>
+    <h2><a href="#" onclick="onCaptureFinish(); return false;">Finish</a></h2>
 
 </body>
 </html>
