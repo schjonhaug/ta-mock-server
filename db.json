@@ -5,7 +5,7 @@
     "updated": "2017-10-04T15:15:27.753Z",
     "capture": {
       "excludeDays": 120,
-      "active": false,
+      "active": true,
       "url": "https://pacific-oasis-54671.herokuapp.com",
       "title": "Help us improve"
 
