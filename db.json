@@ -2,41 +2,28 @@
   "setup": {
     "id": "tm_00027",
     "name": "Task Analytics",
-    "updated": "2017-09-13T12:10:24.057Z",
+    "updated": "2017-10-04T15:15:27.753Z",
     "capture": {
       "excludeDays": 120,
-      "active": true,
-      "rate": 1,
-      "collect": true
+      "active": false,
+      "url": "https://pacific-oasis-54671.herokuapp.com",
+      "title": "Help us improve"
+
     },
-    "render": {
-      "consent": {
-        "top": 0
-      },
-      "avatar": {
-        "left": 20,
-        "top": 20,
-        "src": {
-          "2x": "https://pacific-oasis-54671.herokuapp.com/public/launcher%402x.png",
-          "3x": "https://pacific-oasis-54671.herokuapp.com/public/launcher%403x.png"
-        }
-      },
-      "capture": {
-        "url": "https://pacific-oasis-54671.herokuapp.com"
+    "avatar": {
+      "src": {
+        "2x": "https://pacific-oasis-54671.herokuapp.com/public/launcher%402x.png",
+        "3x": "https://pacific-oasis-54671.herokuapp.com/public/launcher%403x.png"
       }
     },
-    "texts": {
-      "consent": {
-        "accept": "Yes",
-        "decline": "No",
-        "text": "It'll only take a few minutes",
-        "heading": "Would you help us improve taskanalytics.com?"
-      },
-      "instructions": {
-        "goButton": "Ok, I understand",
-        "heading": "Great!",
-        "text": "First do what you came for. When you are done or gave up, click the button labelled 'Done' in the lower right corner."
-      }
+    "consent": {
+      "title": "Would you like to help us improve out app?"
+    },
+    "notification": {
+      "title": "Oops!",
+      "body": "Did you forget to complete your task?",
+      "timeout": 10
     }
+
   }
 }
