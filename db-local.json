@@ -5,7 +5,7 @@
     "updated": "2017-10-04T15:15:27.753Z",
     "capture": {
       "excludeDays": 120,
-      "active": true,
+      "collect": true,
       "url": "http://localhost:3000/",
       "title": "Help us improve!"
 
