@@ -24,6 +24,12 @@
 
         }
 
+        function onCaptureDestroy() {
+
+            window.webkit.messageHandlers.observe.postMessage("onCaptureDestroy");
+
+        }
+
         function onCaptureOpen() {
             document.getElementById("status").textContent = "Opened";
         }
@@ -46,6 +52,8 @@
 
     <h1>Capture</h1>
     <h2><a href="#" onclick="onCaptureFinish(); return false;">Finish</a></h2>
+    <h2><a href="#" onclick="onCaptureDestroy(); return false;">Destroy</a></h2>
+
 
 </body>
 </html>
